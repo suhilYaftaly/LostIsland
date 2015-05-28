@@ -22,6 +22,7 @@
     opacity: 1;
 }
 
+/*styling of the slides*/
 .slide {
     display: block;
     width: 700px;
@@ -43,15 +44,17 @@
     line-height: 45px;
 }
 
+/* Styling the slide links to mimic button*/
 .slide a, .slide a:visited {
-    color: #071549;
+    color: #ffffff;
     text-decoration: none;
-    background-color: #abc;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #cde;
+    background-color: #c123de;
+    padding: 6px 24px;
+    border-radius: 6px;
+    border: 1px solid #a511c0;
 }
 
+/* Change color when user hovers over links*/
 .slide a:hover, .slide a:active {
     background-color: #cde;
 }
