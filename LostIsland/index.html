@@ -4,12 +4,143 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Lost Island game</title>
+
     <!--Css Section-->
     <link href="CSS/reset.css" rel="stylesheet" />
+    <link href="CSS/main.css" rel="stylesheet" />
 </head>
-<body>
+<body onload="init();">
+    <div id="impress">
+        <!--FIRST SLIDE Beach Crash-->
+        <div id="1" class="step slide">
+            <div class="slide-text">
+                <p>
+                    Your helicopter crashed into an unknown islands beach.
+                    You survived, your radio is destroyed, you decide to build SOS at the
+                    beach with stone hoping for someone to see it from a plane. Now you get hungry.
+                </p>
+                <p><a href="#2">BUILD</a>something from crash recage to start fishing at the beach.</p>
+                <p><a href="#3">DECIDE</a>to go to the jungle hunting for some real meat.</p>
+            </div><!-- END OF SLIDE TEXT -->
+        </div><!-- END OF SLIDE 1 Initial beach crash -->
+
+        <!--SECOND SLIDE Negative path -->
+        <div id="2" class="step slide" data-x="-1500">
+            <div class="slide-text">
+                <p>
+                    You build a net for fishing, but then for some reason you find a gun from recage.
+                </p>
+                <p><a href="#4">USE</a>the net to fish like a man who knows how to fish</p>
+                <p><a href="#5">SHOOT</a>the fish with your gun</p>
+            </div>
+        </div><!-- END OF SLIDE 2 -->
+
+        <!--FOURTH SLIDE Negative path -->
+        <div id="4" class="step slide" data-x="1500">
+            <div class="slide-text">
+                <p>
+                    You catch some fish with your net, and all of sudden a very poisonos jelly fish stings your leg. after an hour of agony and pain you die.
+                </p>
+                <div class="menu"><a href="#1">START OVER</a></div>
+            </div>
+        </div><!-- END OF SLIDE 4 -->
+
+        <!--FIFTH SLIDE Negative path -->
+        <div id="5" class="step slide" data-y="1500">
+            <div class="slide-text">
+                <p>
+                    You start shooting the fish with your gun. Since you have never used a gun you manage to shoot your neck with a bullet, you bleed out and die.
+                </p>
+                <div class="menu"><a href="#1">START OVER</a></div>
+            </div>
+        </div><!-- END OF SLIDE 5 -->
+
+        <!--THIRD SLIDE Positive path -->
+        <div id="3" class="step slide" data-y="-1500">
+            <div class="slide-text">
+                <p>
+                    You grab a nice peice of sharp metal from the recage to use as a knife and enter the jungle. You see a lion baby who just had a hunt.
+                </p>
+                <p><a href="#6">WAIT</a>for the baby to finish eating and hopefully it will leave you some leftovers.</p>
+                <p><a href="#7">ATTACK</a>the baby and you get to have lots of meat from the baby and the dead animal.</p>
+            </div>
+        </div><!-- END OF SLIDE 3 -->
+
+        <!-- SLIDE 6 Negative path -->
+        <div id="6" class="step slide" data-z="-1500">
+            <div class="slide-text">
+                <p>
+                    you wait for a very long time and the baby lion ate all the meat. You starve to death.
+                </p>
+                <div class="menu"><a href="#1">START OVER</a></div>
+            </div>
+        </div><!-- END OF SLIDE 6 -->
+
+        <!-- SLIDE 7 Positive path -->
+        <div id="7" class="step slide" data-z="1500">
+            <div class="slide-text">
+                <p>
+                    You manage to kill the baby lion your feeling real proud of your selfe. You make your selfe some nice barbecue fill up that stomach.
+                    After a while you see the lion cubs mother pissed off and running towards you.
+                </p>
+                <p><a href="#8">CONFRONT</a>the lioness since your such a badass. You killed the baby you can kill the mother too</p>
+                <p><a href="#9">RUN</a>Run Run Run.</p>
+            </div>
+        </div><!-- END OF SLIDE 7 -->
+
+        <!-- SLIDE 8 Negative path -->
+        <div id="8" class="step slide" data-x="2555">
+            <div class="slide-text">
+                <p>
+                    You confronted the lioness like a real man, after hours of intence battle lioness eats you up like a reall lion.
+                </p>
+                <div class="menu"><a href="#1">START OVER</a></div>
+            </div>
+        </div><!-- END OF SLIDE 6 -->
+
+        <!-- SLIDE 9 Positive path -->
+        <div id="9" class="step slide" data-x="-2555">
+            <div class="slide-text">
+                <p>
+                    You manage to run away and hide from the lioness under the bushes. After an hour it feels like the lioness is gone.
+                </p>
+                <p>You hear some females chatter and laughter coming from your right</p>
+                <p><a href="#10">KEEP HIDING</a>, because your not sure if the lioness is really gone.</p>
+                <p><a href="#11">GO</a> after the females</p>
+            </div>
+        </div><!-- END OF SLIDE 9 -->
+
+        <!-- SLIDE 10 Negative path -->
+        <div id="10" class="step slide" data-y="2555">
+            <div class="slide-text">
+                <p>
+                    The lioness finds you and eats you up bloody.
+                </p>
+                <div class="menu"><a href="#1">START OVER</a></div>
+            </div>
+        </div><!-- END OF SLIDE 10 -->
+
+        <!-- SLIDE 11 GAMES END -->
+        <div id="11" class="step slide" data-y="-2555">
+            <div class="slide-text">
+                <p>
+                    You find 3 tall beautiful blonde woman taking a bath in a pond under a stream of water. 
+                </p>
+                <p>You ask them about the island and they tell you that this island is populated by woman only and they have never seen a man
+                they make you their kind and you live happily ever after :)</p>
+                <div class="menu"><a href="#1">PLAY AGAIN</a></div>
+            </div>
+        </div><!-- END OF SLIDE 11 -->
+
+    </div> <!-- END OF IMPRESS -->
+
+
 
     <!-- JavaScript Section -->
     <script src="Scripts/lib/impress.js"></script>
+   
+    
+    <script src="Scripts/game.js"></script>
+
 </body>
 </html>

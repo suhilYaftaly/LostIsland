@@ -1,0 +1,69 @@
+﻿body {
+    background: #f0b7a1; /* Old browsers */
+    background: -moz-linear-gradient(top, #f0b7a1 0%, #8c3310 50%, #752201 51%, #bf6e4e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0b7a1), color-stop(50%,#8c3310), color-stop(51%,#752201), color-stop(100%,#bf6e4e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); /* IE6-9 */
+}
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.0;
+    -webkit-transition:  1s;
+    -moz-transition:  1s;
+    -ms-transition:  1s;
+    -o-transition:  1s;
+    transition: background 1s;
+}
+
+.impress-enabled .step.active {
+    opacity: 1;
+}
+
+.slide {
+    display: block;
+    width: 700px;
+    height: 600px;
+    padding: 40px 60px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: rgb(52, 52, 52);
+    text-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    font-family: "Comic Sans MS", arial, sans-serif;
+    font-size: 20px;
+}
+
+/* styling for slide paragraphs */
+.slide p {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    line-height: 45px;
+}
+
+.slide a, .slide a:visited {
+    color: #071549;
+    text-decoration: none;
+    background-color: #abc;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #cde;
+}
+
+.slide a:hover, .slide a:active {
+    background-color: #cde;
+}
+
+/* styling for slide text area*/
+.slide .slide-text {
+    height: 450px;
+}
+
+/* styling for the menu */
+div.menu {
+    border-top: 2px solid black;
+    padding-top: 25px;
+    text-align: center;
+}
